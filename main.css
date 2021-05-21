@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Photos/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Muli', sans-serif;
+}
+
+
+.Timeless-icon {
+    height: 100px;
+    width: auto;
+    margin: 15px 15px 15px 15px;
+    float: left;
+}
+
+.icons {
+    height: 50px;
+    width: auto;
+}
+.nav {
+    float: right;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    padding: 15px;
+}

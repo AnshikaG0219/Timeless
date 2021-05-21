@@ -1,0 +1,43 @@
+.container {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 380px;
+    font-size: 20px;
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.eleventh {
+    float: left;
+    margin: 50px;
+    border: 3px solid #8e44ad;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.eleventh a {
+    text-decoration: none;
+}
+
+.twelfth {
+    float: right;
+    margin: 50px;
+    border: 3px solid #8e44ad;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.twelfth a {
+    text-decoration: none;
+}
+
+.classes-icon {
+    height: 200px;
+    width: auto;
+}
+
