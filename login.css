@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap');
+
+/* BASIC */
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+
+a {
+  font-family: 'Work Sans', sans-serif;
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 30px 8px 10px 8px;
+  color: #cccccc;
+}
+
+/* IMAGE */
+.login-img {
+  width: 18%;
+  height: 18%;
+  margin: 25px;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.formContent {
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  padding: 0px;
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 18px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+/* TABS */
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #5fbae9;
+}
+
+/* FORM TYPOGRAPHY*/
+.btn-blue {
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  border-radius: 5px 5px 5px 5px;
+  margin: 30px 20px 40px 20px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.95);
+}
+
+#login, #password {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  margin: 5px;
+  width: 70%;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.underlineHover {
+  font-size: 17px;
+}
+
+.inactive {
+  font-size: 17px;
+}
+
+.forgot_password {
+    font-size: 20px;
+}
+
+/* ANIMATIONS */
+/* Fade-in-down Animation (optional) */
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*Fade-in Animation (optional)*/
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  animation:fadeIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  animation-delay: 1s;
+}
+
+/* Underline Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+.btn-blue:hover  {
+  background-color: #39ace7;
+  cursor: pointer;
+}
+
+/* OTHERS */
+*:focus {
+  outline: none;
+}
+
+#icon {
+  width:60%;
+}
+
+* {
+  box-sizing: border-box;
+}
