@@ -22,6 +22,10 @@
 .eleventh a {
     text-decoration: none;
 }
+.eleventh .number11 {
+    color: #fff;
+}
+
 
 .twelfth {
     float: right;
@@ -34,6 +38,9 @@
 
 .twelfth a {
     text-decoration: none;
+}
+.twelfth .number12 {
+    color: #fff;
 }
 
 .classes-icon {
