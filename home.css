@@ -18,6 +18,18 @@ body {
     height: 50px;
     width: auto;
 }
+
+.icons:hover{
+    animation: rotate-icons 1s infinite;
+}
+@keyframes rotate-icons{
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
 .nav {
     float: right;
     list-style: none;
@@ -62,4 +74,28 @@ body {
     background: #8e44ad;
     border: 1px solid #8e44ad;
 }
+h1{
+    animation: fade-in-out 4s ease-in;
+}
 
+@keyframes fade-in-out{
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.btnOfNotes{
+    animation: translateBtn 2s ease-in;
+}
+
+@keyframes translateBtn {
+    0%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

@@ -12,6 +12,24 @@
     font-weight: lighter;
     letter-spacing: 2px;
 }
+.icons {
+    height: 50px;
+    width: auto;
+}
+
+.icons:hover {
+    animation: rotate-icons 1s infinite;
+}
+
+@keyframes rotate-icons {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
 
 .chapter-list {
     position: absolute;
